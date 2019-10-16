@@ -1,0 +1,151 @@
+@font-face{
+    src: url("../font/TaxiDriver.ttf");
+    font-family: "Taxi Driver";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+   position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 18px;
+    background-color: rgb(253, 197, 170);
+    transition: all 0.4s ease-out;
+}
+.max-header{
+    background-color:rgb(245, 95, 69);
+    height: 100px;
+}
+.min-header{
+    background-color: red;
+    height: 80px;
+}
+
+.contener{
+    max-width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas:
+    "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+}
+.logo{
+    grid-area: lgo;
+}
+.logo img{
+    transition: all 0.4s ease-out;
+}
+.max-logo img{
+    width: 220px;
+}
+.min-logo img{
+   width: 160px;
+}
+.nav-bar{
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+}
+.nav-bar ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+   
+}
+.nav-bar a {
+    font-family: "Taxi Driver";
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+}
+.max-nav a{
+    font-size: 1em;
+    color: aliceblue;
+}
+.min-nav a{
+    font-size: 0.875em;
+    color: black;
+}
+.problema{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(240, 41, 6);
+}
+.grid3{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 200px;
+    width: 800px;
+    height: 800px;
+    padding: 10px;
+
+}
+
+.grid3-item:nth-child(1){
+    grid-row: 1 / 2;
+}
+.grid3-item:nth-child(4) {
+    width: 300px;
+    height: 80;
+    text-decoration-color: rgb(238, 52, 52);
+    background-color: rgb(238, 226, 226);
+}
+.grid3-item{
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+img{
+    width: 300px;
+    height: 80;
+}
+.grid3-item img{
+        grid-column: 1;
+        grid-row: 1/3;
+        align-self: end;
+     }
+     .grid3-item p{
+         background: rgba(0,0,0, 0.6);
+         padding: 10px;
+         color: aliceblue;
+         grid-column: 1;
+         grid-row: 2;
+         align-self: end;
+     }  
+     button{
+         max-width: 150px;
+         max-height: 80px;
+         width: 100px;
+         height: 40px;
+         clear: both;
+         margin: 0 auto;
+         padding: 10px;
+         background: orangered;
+         border: 1px;
+         border-radius: 3px;
+         box-shadow: 3px 3px 5px
+     } 
+     h4{
+         text-align: center;
+         color: brown;
+     }
+
+    
+

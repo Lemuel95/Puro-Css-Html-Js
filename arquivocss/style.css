@@ -1,0 +1,174 @@
+@font-face{
+    src: url("../font/TaxiDriver.ttf");
+    font-family: "Taxi Driver";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 18px;
+    background-color: rgb(253, 197, 170);
+    transition: all 0.4s ease-out;
+}
+.max-header{
+    background-color:rgb(245, 95, 69);
+    height: 100px;
+}
+.min-header{
+    background-color: red;
+    height: 80px;
+}
+
+.contener{
+    max-width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas:
+    "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+}
+.logo{
+    grid-area: lgo;
+}
+.logo img{
+    transition: all 0.4s ease-out;
+}
+.max-logo img{
+    width: 260px
+}
+.min-logo img{
+   width: 160px;
+}
+.nav-bar{
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+}
+.nav-bar ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+   
+}
+.nav-bar a {
+    font-family: "Taxi Driver";
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+}
+.max-nav a{
+    font-size: 1em;
+    color: aliceblue;
+}
+.min-nav a{
+    font-size: 0.875em;
+    color: black;
+}
+.problema{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 41, 6);
+}
+main{
+    font-size: 20px;
+}
+main section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "Taxi Driver";
+    font-size: 1em;
+} 
+main section:nth-child(2){
+    height: 100vh;
+
+}
+main section:nth-child(3){
+    height: 100vh;
+    background-color: rgb(175, 245, 221);
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px; 
+ }
+ img{
+     max-width: 100%;
+     display: block;
+ }
+ .sobre{
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 800px;
+     margin: 0 auto;
+ }
+ .sobre> div{
+     flex: 1 1 200px;
+     margin: 10px;
+ 
+ }
+ #bem{
+     width: 100%;
+     background-image: url(../fotos/Recife.jpg);
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: 100%;
+ }
+ #bem > div{
+     text-align: center;
+     color:white;
+    box-shadow: 5px 5px 8px;
+    align-self: auto;
+ }
+.bordo div{
+    float: left;
+    max-width: 800px;
+    width: 100%;
+    border: 20px;
+    border-radius: 20px;
+
+}
+iframe{
+  
+    max-width: 400px;
+    max-width: 100%;
+    display: block;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+
+}
+footer{
+    background-color: brown;
+}
+footer p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 150px;
+}
