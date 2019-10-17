@@ -83,6 +83,57 @@ header{
     height: 100%;
     background-color: rgb(240, 41, 6);
 }
+@media (max-width: 750px){
+    .contener{
+        padding: 0 30px;
+        grid-template-areas:
+        "lgo ... mnu";
+    } 
+    .max-logo img{
+        width: 160px
+    }
+    .min-logo img{
+       width: 90px;
+    }
+    .menu{
+        grid-area: mnu;
+        display: grid;
+        align-content: center;
+    }
+    .herburger{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
+    .herburger::before{
+        content: "";
+        position: absolute;
+        top: -8;
+        left: 0;
+        width: 28px;
+        height: 3px;
+        background-color: blue;
+    } 
+    .herburger::after{
+        content: "";
+        position: absolute;
+        top: 8;
+        left: 0;
+        width: 28px;
+        height: 3px;
+        background-color: blue;
+    } 
+    .max-header{
+        height: 80px;
+    }
+    .min-header{
+        height: 60px;
+    } 
+    .nav-bar{
+        display: none;
+    } 
+}
 main{
     font-size: 20px;
 }
